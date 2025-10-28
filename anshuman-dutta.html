@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional portfolio showcasing my creative work and professional journey">
+    <meta name="keywords" content="portfolio, creative, professional, work">
+    <title>My Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <custom-navbar></custom-navbar>
+    <div id="vanta-bg" class="fixed inset-0 -z-10"></div>
+    <div id="threejs-container" class="fixed inset-0 -z-10 opacity-0 transition-opacity duration-1000"></div>
+<main class="relative z-10">
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 py-20">
+            <div class="max-w-4xl mx-auto text-center bg-white bg-opacity-90 rounded-xl p-8 shadow-xl backdrop-blur-sm">
+                <h1 class="text-5xl md:text-6xl font-bold text-gray-800 mb-6 slide-down" style="animation-delay: 0.2s">Hello, I'm <span class="text-indigo-600 bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">[Your Name]</span></h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 fade-in" style="animation-delay: 0.6s">[Your Profession/Role] creating impactful experiences</p>
+<div class="flex justify-center space-x-4">
+                    <a href="#work" class="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">View My Work</a>
+                    <a href="#contact" class="px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg hover:bg-indigo-50 transition-colors">Contact Me</a>
+                </div>
+            </div>
+        </section>
+        <!-- About Me Section with Enhanced Parallax -->
+        <section id="about" class="py-20 relative overflow-hidden">
+            <div class="parallax-bg absolute inset-0 bg-gray-200 opacity-30" style="background-image: url('http://static.photos/technology/1200x630/5');"></div>
+            <div class="parallax-layer" data-depth="0.2">
+                <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative parallax-content">
+<div class="bg-white rounded-xl shadow-xl p-8 md:p-12 backdrop-blur-sm bg-opacity-90">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-8">About Me</h2>
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-700 mb-4">My Journey</h3>
+                            <p class="text-gray-600 leading-relaxed">[Your professional background and journey. Keep it concise but engaging. Example: "With a passion for creating meaningful experiences, I've spent the last [X] years working in [industry/field]. My approach combines creativity with strategic thinking to deliver results that matter."]</p>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-semibold text-gray-700 mb-4">My Values</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="mr-3 mt-1 text-indigo-500" data-feather="check-circle"></i>
+                                    <span class="text-gray-600">Quality and attention to detail</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="mr-3 mt-1 text-indigo-500" data-feather="check-circle"></i>
+                                    <span class="text-gray-600">Collaborative approach</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="mr-3 mt-1 text-indigo-500" data-feather="check-circle"></i>
+                                    <span class="text-gray-600">Continuous learning</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="mr-3 mt-1 text-indigo-500" data-feather="check-circle"></i>
+                                    <span class="text-gray-600">Client-focused solutions</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Image Gallery Section -->
+        <section class="py-16" data-aos="fade-up">
+            <custom-gallery></custom-gallery>
+        </section>
+
+        <!-- Experience Timeline Section -->
+<section id="timeline" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center slide-up">My Journey</h2>
+                <div class="relative timeline-container">
+                    <!-- Timeline line -->
+                    <div class="absolute left-1/2 w-1 bg-indigo-100 h-full transform -translate-x-1/2"></div>
+                    
+                    <!-- Timeline items -->
+                    <div class="space-y-12 timeline-items">
+                        <!-- Item 1 -->
+                        <div class="relative timeline-item slide-right">
+                            <div class="timeline-dot bg-indigo-600"></div>
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 timeline-content">
+                                <div class="flex items-center mb-4">
+                                    <h3 class="text-xl font-bold text-gray-800">Senior Designer</h3>
+                                    <span class="ml-auto px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">2022 - Present</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">Leading design initiatives and mentoring junior designers at TechCorp.</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="mr-2 mt-1 text-indigo-500" data-feather="check-circle"></i>
+                                        <span class="text-gray-600">Led redesign of core product</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="mr-2 mt-1 text-indigo-500" data-feather="check-circle"></i>
+                                        <span class="text-gray-600">Established design system</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="relative timeline-item slide-left">
+                            <div class="timeline-dot bg-indigo-600"></div>
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 timeline-content">
+                                <div class="flex items-center mb-4">
+                                    <h3 class="text-xl font-bold text-gray-800">UI/UX Designer</h3>
+                                    <span class="ml-auto px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">2019 - 2022</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">Designed interfaces for web and mobile applications at DesignStudio.</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="mr-2 mt-1 text-indigo-500" data-feather="check-circle"></i>
+                                        <span class="text-gray-600">Created award-winning dashboard</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="mr-2 mt-1 text-indigo-500" data-feather="check-circle"></i>
+                                        <span class="text-gray-600">Improved user retention by 40%</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="relative timeline-item slide-right">
+                            <div class="timeline-dot bg-indigo-600"></div>
+                            <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-100 timeline-content">
+                                <div class="flex items-center mb-4">
+                                    <h3 class="text-xl font-bold text-gray-800">Junior Designer</h3>
+                                    <span class="ml-auto px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm font-medium">2017 - 2019</span>
+                                </div>
+                                <p class="text-gray-600 mb-4">Started my career as a junior designer at CreativeMinds.</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="mr-2 mt-1 text-indigo-500" data-feather="check-circle"></i>
+                                        <span class="text-gray-600">Assisted on multiple client projects</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="mr-2 mt-1 text-indigo-500" data-feather="check-circle"></i>
+                                        <span class="text-gray-600">Developed branding guidelines</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section with Enhanced Parallax -->
+        <section class="py-20 relative overflow-hidden">
+            <div class="parallax-bg absolute inset-0 bg-indigo-900 opacity-70"></div>
+            <div class="parallax-layer" data-depth="0.15">
+                <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative text-white text-center parallax-content">
+<h2 class="text-4xl font-bold mb-12">What People Say</h2>
+                <div class="space-y-10">
+                    <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm">
+                        <p class="text-xl italic mb-4">"[Insert testimonial from a client or colleague. Example: 'Working with [Your Name] was an absolute pleasure. Their attention to detail and creative approach made all the difference in our project.']"</p>
+                        <p class="font-semibold">- Client/Colleague Name, Company</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 p-8 rounded-xl backdrop-blur-sm">
+                        <p class="text-xl italic mb-4">"[Another testimonial highlighting your strengths and the impact of your work.]"</p>
+                        <p class="font-semibold">- Client/Colleague Name, Company</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-gray-800 mb-12 text-center">Let's Connect</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-700 mb-4">Get In Touch</h3>
+                        <p class="text-gray-600 mb-6">I'd love to hear about your project or discuss potential opportunities. Feel free to reach out!</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="mr-4 mt-1 text-indigo-500" data-feather="mail"></i>
+                                <span class="text-gray-600">your.email@example.com</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="mr-4 mt-1 text-indigo-500" data-feather="phone"></i>
+                                <span class="text-gray-600">(123) 456-7890</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="mr-4 mt-1 text-indigo-500" data-feather="map-pin"></i>
+                                <span class="text-gray-600">Your City, Country</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <form class="space-y-6">
+                            <div>
+                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                            </div>
+                            <button type="submit" class="px-6 py-3 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <custom-footer></custom-footer>
+<style>
+
+/* Shared styles across all pages */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    perspective: 1000px;
+}
+
+/* Headings animations */
+h1, h2, h3, h4, h5, h6 {
+    transform-style: preserve-3d;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    transform-origin: center bottom;
+}
+
+.heading-animate {
+    opacity: 0;
+    transform: translateY(30px) rotateX(-15deg);
+}
+
+.heading-animate.active {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+}
+/* Enhanced Parallax effect styles */
+.parallax-bg {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    will-change: transform;
+    transition: background-image 1.5s ease-in-out;
+    transform: translateZ(0);
+}
+
+.parallax-layer {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.parallax-content {
+    position: relative;
+    z-index: 2;
+    will-change: transform;
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6366f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4f46e5;
+}
+/* AOS animation delays */
+[data-aos] {
+    transition-property: transform, opacity;
+}
+
+/* Animation classes */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+.slide-up {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideUp 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.slide-down {
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideDown 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.slide-left {
+    opacity: 0;
+    transform: translateX(80px);
+    animation: slideLeft 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.slide-right {
+    opacity: 0;
+    transform: translateX(-80px);
+    animation: slideRight 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.9);
+    animation: zoomIn 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes zoomIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideDown {
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideUp {
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideLeft {
+    to { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    to { 
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* Gallery fade effect */
+.gallery-slide {
+    transition: opacity 1s ease;
+}
+
+/* Timeline styles */
+.timeline-container {
+    padding-bottom: 40px;
+}
+
+.timeline-item {
+    width: 100%;
+    padding-left: 50%;
+    padding-right: 30px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 0 0 0 4px white, 0 0 0 6px #6366f1;
+}
+
+.timeline-content {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive timeline */
+@media (max-width: 768px) {
+    .timeline-item {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    
+    .timeline-dot {
+        left: 0;
+    }
+    
+    .timeline-container::before {
+        left: 20px;
+    }
+    
+    .timeline-item:nth-child(even) {
+        padding-left: 30px;
+        padding-right: 0;
+    }
+    
+    .timeline-item:nth-child(even) .timeline-dot {
+        left: 0;
+    }
+}
+</style>
+<script>
+
+// Initialize Vanta.js and Three.js backgrounds
+document.addEventListener('DOMContentLoaded', () => {
+    // Complex Three.js scene
+    const threeContainer = document.getElementById('threejs-container');
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    threeContainer.appendChild(renderer.domElement);
+
+    // Add complex geometry
+    const geometry = new THREE.IcosahedronGeometry(10, 2);
+    const material = new THREE.MeshPhongMaterial({ 
+        color: 0x6366f1,
+        wireframe: false,
+        flatShading: true,
+        transparent: true,
+        opacity: 0.7
+    });
+    const mesh = new THREE.Mesh(geometry, material);
+    scene.add(mesh);
+
+    // Add lights
+    const light1 = new THREE.DirectionalLight(0xffffff, 1);
+    light1.position.set(1, 1, 1);
+    scene.add(light1);
+    const light2 = new THREE.HemisphereLight(0xffffbb, 0x080820, 1);
+    scene.add(light2);
+
+    // Animation loop
+    function animate() {
+        requestAnimationFrame(animate);
+        mesh.rotation.x += 0.005;
+        mesh.rotation.y += 0.01;
+        renderer.render(scene, camera);
+    }
+    animate();
+
+    // First background (blue net)
+    const vantaBg = VANTA.NET({
+        el: "#vanta-bg",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x6366f1,
+        backgroundColor: 0xf1f5f9,
+        points: 12.00,
+        maxDistance: 22.00,
+        spacing: 18.00
+    });
+
+    // Crossfade between backgrounds on scroll
+    window.addEventListener('scroll', () => {
+        const scrollPercent = window.scrollY / (document.body.scrollHeight - window.innerHeight);
+        threeContainer.style.opacity = scrollPercent;
+        document.getElementById('vanta-bg').style.opacity = 1 - scrollPercent;
+    });
+// Second background (appears when first fades out)
+    let vantaBg2;
+    // Track scroll position for background transition
+    let lastScrollPos = 0;
+    let isTransitioning = false;
+
+    // Handle background transition on scroll
+    window.addEventListener('scroll', () => {
+        const scrollPos = window.scrollY;
+        const docHeight = document.body.scrollHeight;
+        const triggerPoint = docHeight * 0.3;
+
+        if (!isTransitioning && scrollPos > triggerPoint && scrollPos > lastScrollPos) {
+            isTransitioning = true;
+            // Fade out first background
+            vantaBg.setOptions({
+                color: 0x6366f1,
+                backgroundColor: 0xf1f5f9,
+                points: 0,
+                maxDistance: 0,
+                spacing: 0
+            });
+
+            // Create second background
+            vantaBg2 = VANTA.WAVES({
+                el: "#vanta-bg",
+                color: 0x4f46e5,
+                waveHeight: 20,
+                shininess: 50,
+                waveSpeed: 0.5,
+                zoom: 0.8,
+                backgroundColor: 0xf1f5f9
+            });
+        }
+        lastScrollPos = scrollPos;
+    });
+    // Initialize AOS (Animate On Scroll) with custom settings
+    AOS.init({
+        duration: 1000,
+        easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
+        once: false,
+        mirror: true,
+        offset: 100
+    });
+
+    // Dynamic 3D texture changes for parallax backgrounds
+    const parallaxBgs = document.querySelectorAll('.parallax-bg');
+    const bgTextures = [
+        'http://static.photos/technology/1200x630/5',
+        'http://static.photos/abstract/1200x630/7',
+        'http://static.photos/minimal/1200x630/9',
+        'http://static.photos/gradient/1200x630/11'
+    ];
+
+    let currentBgIndex = 0;
+    
+    function cycleBackgrounds() {
+        currentBgIndex = (currentBgIndex + 1) % bgTextures.length;
+        parallaxBgs.forEach(bg => {
+            bg.style.backgroundImage = `url(${bgTextures[currentBgIndex]})`;
+        });
+    }
+    
+    setInterval(cycleBackgrounds, 5000);
+
+    // Heading animations with Intersection Observer
+    const headingObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            } else {
+                entry.target.classList.remove('active');
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -100px 0px'
+    });
+
+    document.querySelectorAll('h1, h2, h3, h4, h5, h6').forEach(heading => {
+        heading.classList.add('heading-animate');
+        headingObserver.observe(heading);
+    });
+
+    // Enhanced parallax effects
+    function updateParallax() {
+        const scrollPosition = window.scrollY;
+        document.querySelectorAll('.parallax-layer').forEach(layer => {
+            const depth = layer.dataset.depth || 0.3;
+            const movement = -(scrollPosition * depth);
+            layer.style.transform = `translateY(${movement}px)`;
+        });
+    }
+
+    window.addEventListener('scroll', updateParallax);
+    window.addEventListener('resize', updateParallax);
+    updateParallax();
+// Enhanced scroll animation with Intersection Observer
+    const animateOnScroll = () => {
+const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    
+                    if (entry.target.classList.contains('slide-up')) {
+                        entry.target.style.transform = 'translateY(0)';
+                    } else if (entry.target.classList.contains('slide-down')) {
+                        entry.target.style.transform = 'translateY(0)';
+                    } else if (entry.target.classList.contains('slide-left')) {
+                        entry.target.style.transform = 'translateX(0)';
+                    } else if (entry.target.classList.contains('slide-right')) {
+                        entry.target.style.transform = 'translateX(0)';
+                    } else if (entry.target.classList.contains('zoom-in')) {
+                        entry.target.style.transform = 'scale(1)';
+                    }
+                    
+                    // Add animation class to trigger the animation
+                    entry.target.classList.add('animate');
+                    
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -150px 0px'
+        });
+
+        // Initial animations for hero section
+        const heroElements = document.querySelectorAll('.hero-section > *');
+        heroElements.forEach((el, i) => {
+            if (!el.classList.contains('animate')) {
+                const delay = i * 0.15;
+                el.style.animationDelay = `${delay}s`;
+                el.style.opacity = 0;
+            }
+        });
+
+        // Other scroll-triggered elements
+        document.querySelectorAll('.slide-up, .slide-down, .slide-left, .slide-right, .fade-in, .zoom-in').forEach(el => {
+            if (!el.classList.contains('animate')) {
+                el.style.opacity = 0;
+                observer.observe(el);
+            }
+        });
+    };
+// Initial check on load
+    animateOnScroll();
+    
+    // Check on scroll
+    window.addEventListener('scroll', animateOnScroll);
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+// Initialize gallery component
+document.querySelectorAll('custom-gallery').forEach(gallery => {
+    gallery.setAttribute('data-aos', 'zoom-in');
+});
+// Enhanced form handling with SEO optimization
+document.querySelector('form')?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
+    
+    try {
+        // In a real app, you would send to your backend
+        console.log('Form submitted:', Object.fromEntries(formData));
+        alert('Thank you for your message! I will get back to you soon.');
+        form.reset();
+        
+        // Track conversion for analytics
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'conversion', {
+                'send_to': 'AW-123456789/AbCd-EFGHIJKLMNOPQRSTUVWXYZ'
+            });
+        }
+    } catch (error) {
+        console.error('Form error:', error);
+        alert('There was an error submitting your form. Please try again.');
+    }
+});
+
+// Book a call section
+document.getElementById('book-call')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    // Integrate with Calendly or similar
+    window.open('https://calendly.com/yourusername/30min', '_blank');
+});
+
+// Auth system
+document.addEventListener('auth-change', () => {
+    const phone = localStorage.getItem('authPhone');
+    if (phone) {
+        console.log('User is logged in with:', phone);
+    }
+});
+
+// SEO optimization
+const metaDescription = document.createElement('meta');
+metaDescription.name = 'description';
+metaDescription.content = 'Professional portfolio showcasing my creative work and professional journey in web development and design. Contact me for collaborations.';
+document.head.appendChild(metaDescription);
+
+const metaKeywords = document.createElement('meta');
+metaKeywords.name = 'keywords';
+metaKeywords.content = 'portfolio, web developer, designer, frontend, UI/UX, creative, professional work, hire developer';
+document.head.appendChild(metaKeywords);
+
+// Schema.org structured data
+const script = document.createElement('script');
+script.type = 'application/ld+json';
+script.text = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "[Your Name]",
+    "jobTitle": "Web Developer & Designer",
+    "url": "[Your Website URL]",
+    "sameAs": [
+        "https://linkedin.com/in/yourprofile",
+        "https://github.com/yourusername"
+    ]
+});
+document.head.appendChild(script);
+</script>
+    <script src="components/navbar.js"></script>
+    <script src="components/gallery.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="components/auth.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+<script>
+        feather.replace();
+    </script>
+<script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+</body>
+</html>
